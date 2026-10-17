@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "X Search View",
+  "version": "0.6.0",
+  "description": "Reformats visible X posts into a clean, search-results-style reading view.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
